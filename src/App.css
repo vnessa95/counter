@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html, body{
+  margin:0;
+  padding: 0;
+  background-color: #F2E3BC;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.main--container{
+  margin: 100px;
+}
+button{
+  margin: 50px;
+  font-size: 45px;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #C19875;
+  box-shadow: black 5px 10px 25px;
+}
+.counter--container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  font-size: 50px;
+  padding: 50px;
+  font-weight: bold;
+  box-shadow: black 5px 5px 15px;
+  width: 650px;
+  background-color: #414535;
+  position: relative;
   color: white;
+  z-index: 1;
 }
-
-.App-link {
-  color: #61dafb;
+.counter--border{
+  border: #C19875 solid 5px;
+  width: 825px;
+  padding: 30px;
+  z-index: 2;
+  position: relative;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sih--div--left{
+  position: relative;
+  background-color: #96BBBB;
+  height: 250px;
+  width: 400px;
+  z-index: 0;
+  margin-top: -200px;
+  margin-left: -25px;
+}
+.sih--div--right{
+  background-color:#96BBBB ;
+  height: 250px;
+  width: 400px;
+  z-index: 0;
+  margin-left: 518px;
+  position: relative;
+  margin-top: -562px;
 }
